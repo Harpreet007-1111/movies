@@ -1,0 +1,162 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img img {
+  width: 95%;
+  max-height: 100vh;
+  object-fit: cover;
+  padding: 1rem;
+  margin-left: 2rem;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 1.5rem;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: calc(1rem + 1.5vw);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: .8rem;
+}
+
+.content .genre {
+  display: inline-flex;
+  padding: 0 .5rem;
+  color: #fff;
+  margin: 1rem 0;
+  font-size: calc(1rem + 1vw);
+}
+
+.content h2 {
+  font-size: calc(1rem + 1vw);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: .8rem 0;
+  color: #fff;
+}
+
+.content .tagname {
+  font-size: calc(.75rem + 1vw);
+  padding: 0;
+  color: #fff;
+}
+
+#icons {
+  display: flex;
+  margin: .5rem 0;
+}
+
+.app {
+  background-color: #003366;
+  width: 50px;
+  height: 50px;
+  max-width: auto;
+  outline: none;
+  padding: .8rem;
+  margin: 0 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  font-size: calc(1rem + 1vw);
+}
+
+#icons .app:hover {
+  color: hotpink;
+}
+
+.content p {
+  font-size: calc(1rem + 1vw);
+  line-height: 32px;
+  color: #fff;
+  padding: 0 1.5rem 0.5rem 0;
+  text-align: justify;
+}
+
+/* GoBack icon */
+
+.backIcon {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 50px;
+  height: 50px;
+  padding: .4rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: #003366;
+}
+
+.backIcon:hover {
+  color: blanchedalmond;
+}
+
+@media (max-width: 900px) {
+  #wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .img img {
+    width: 40%;
+    margin-left: 25%;
+    margin-bottom: 0;
+  }
+
+  .content {
+    text-align: center;
+    margin: 0%;
+  }
+
+  .content h1 {
+    margin: .2rem;
+  }
+
+  .content .genre {
+    margin: 0;
+  }
+
+  .content #icons {
+    align-items: center;
+    justify-content: center;
+    margin: .2rem 0;
+  }
+
+  .content h2 {
+    margin: .2rem;
+  }
+
+  .content p {
+    margin: .1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 19px;
+  }
+
+}
