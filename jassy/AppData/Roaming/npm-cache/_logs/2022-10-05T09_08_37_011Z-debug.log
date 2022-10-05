@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'deploy'
+1 verbose cli ]
+2 info using npm@6.14.13
+3 info using node@v14.17.3
+4 verbose run-script [ 'predeploy', 'deploy', 'postdeploy' ]
+5 info lifecycle movies@0.1.0~predeploy: movies@0.1.0
+6 verbose lifecycle movies@0.1.0~predeploy: unsafe-perm in lifecycle true
+7 verbose lifecycle movies@0.1.0~predeploy: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;H:\Movies Web\movies\node_modules\.bin;C:\oracle\product\11.2.0\client_1\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Git\cmd;C:\Users\Harpreet jassy\AppData\Local\Microsoft\WindowsApps;C:\Users\Harpreet jassy\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Users\Harpreet jassy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MongoDB\Server\5.0\bin;
+8 verbose lifecycle movies@0.1.0~predeploy: CWD: H:\Movies Web\movies
+9 silly lifecycle movies@0.1.0~predeploy: Args: [ '/d /s /c', 'npm run build' ]
+10 silly lifecycle movies@0.1.0~predeploy: Returned: code: 0  signal: null
+11 info lifecycle movies@0.1.0~deploy: movies@0.1.0
+12 verbose lifecycle movies@0.1.0~deploy: unsafe-perm in lifecycle true
+13 verbose lifecycle movies@0.1.0~deploy: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;H:\Movies Web\movies\node_modules\.bin;C:\oracle\product\11.2.0\client_1\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Git\cmd;C:\Users\Harpreet jassy\AppData\Local\Microsoft\WindowsApps;C:\Users\Harpreet jassy\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Users\Harpreet jassy\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MongoDB\Server\5.0\bin;
+14 verbose lifecycle movies@0.1.0~deploy: CWD: H:\Movies Web\movies
+15 silly lifecycle movies@0.1.0~deploy: Args: [ '/d /s /c', 'gh-pages -d build' ]
+16 silly lifecycle movies@0.1.0~deploy: Returned: code: 1  signal: null
+17 info lifecycle movies@0.1.0~deploy: Failed to exec deploy script
+18 verbose stack Error: movies@0.1.0 deploy: `gh-pages -d build`
+18 verbose stack Exit status 1
+18 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\index.js:332:16)
+18 verbose stack     at EventEmitter.emit (events.js:375:28)
+18 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\lib\spawn.js:55:14)
+18 verbose stack     at ChildProcess.emit (events.js:375:28)
+18 verbose stack     at maybeClose (internal/child_process.js:1055:16)
+18 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+19 verbose pkgid movies@0.1.0
+20 verbose cwd H:\Movies Web\movies
+21 verbose Windows_NT 10.0.19043
+22 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "deploy"
+23 verbose node v14.17.3
+24 verbose npm  v6.14.13
+25 error code ELIFECYCLE
+26 error errno 1
+27 error movies@0.1.0 deploy: `gh-pages -d build`
+27 error Exit status 1
+28 error Failed at the movies@0.1.0 deploy script.
+28 error This is probably not a problem with npm. There is likely additional logging output above.
+29 verbose exit [ 1, true ]
